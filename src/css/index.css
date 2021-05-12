@@ -70,4 +70,10 @@ code {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
+
+#headerDiv {
+  border: 0rem solid #303d66;
+  background-color: #303d66;
+  padding-right: 0.5rem;
+}
 /*# sourceMappingURL=index.css.map */
