@@ -1,0 +1,28 @@
+$darkest-blue: #07131f;
+$lightest-blue: #d0daf5;
+$dark-blue: #303d66;
+$light-blue: #6d8abf;
+
+div.navDiv {
+    nav {
+        border: {
+/*             bottom-right-radius: 1rem;
+            bottom-left-radius: 1rem; */
+            bottom: 0.2rem solid $dark-blue;
+        }
+        display: flex;
+        margin: 0rem;
+        padding: {
+            top :0rem;
+            bottom: 0rem;
+        }
+        a {
+            justify-content: space-evenly;
+            margin: auto;
+        }
+        * {
+            align-items: center;
+            font-size: 1.5rem;
+        }
+    }
+}
