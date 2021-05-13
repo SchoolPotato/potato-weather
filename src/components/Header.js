@@ -10,6 +10,8 @@ const Header = () => {
                         <h1 id="header">Weather Potato</h1>
                     </nav>
                 </div>
+                <a href="/">Home </a>
+                <a href="/">About</a>
             </nav>
         </div>
     )
