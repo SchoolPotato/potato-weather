@@ -8,7 +8,7 @@ div.navDiv {
         border: {
 /*             bottom-right-radius: 1rem;
             bottom-left-radius: 1rem; */
-            bottom: 0.2rem solid $dark-blue;
+            bottom: 0.2rem solid $light-blue;
         }
         display: flex;
         margin: 0rem;
@@ -23,9 +23,9 @@ div.navDiv {
             font-family: LinkDX;
             font-size: 2.5rem;
             text-decoration-line: none;
-            background-color: $light-blue;
-            padding: 0.3rem;
-            border-radius: 0.2rem;
+            background-color: $dark-blue;
+            padding: 0.5rem;
+            // border-radius: 0.2rem;
             box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 1);
         }
         * {

@@ -1,10 +1,16 @@
 import { useState, useEffect } from 'react';
+import temp01 from '../images/temp01.png';
+import temp02 from '../images/temp02.png';
+import temp03 from '../images/temp03.png';
+import temp04 from '../images/temp04.png';
+import calendar from '../images/calendar.png';
+import day from '../images/shortDesc01.png';
+import night from '../images/shortDesc07.png';
 
 const Forecast = ({ id }) => {
-    // const [error, setError] = useState(null);
-    // const [isLoaded, setIsLoaded] = useState(false);
     const [forecast, setForecast] = useState([]);
     const [isLoaded, setIsLoaded] = useState(false);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         fetch('https://api.weather.gov/gridpoints/PSR/159,68/forecast')
@@ -13,6 +19,10 @@ const Forecast = ({ id }) => {
                 (result) => {
                     setForecast(result);
                     setIsLoaded(true);
+                },
+                (error) => {
+                    setIsLoaded(true);
+                    setError(error);
                 }
             )
     }, [])
@@ -22,13 +32,40 @@ const Forecast = ({ id }) => {
         return(
             <div>Loading...</div>
         )
+    } else if(error){
+        return <div>Error: {error.message}</div>
     } else {
+        const temperature = forecast.properties.periods[id].temperature;
+        const name = forecast.properties.periods[id].name;
+        const shortForecast = forecast.properties.periods[id].shortForecast;
+        const isDay = forecast.properties.periods[id].isDaytime;
+
+        let tempIcon;
+        let weatherIcon;
+
+        if(isDay){
+            weatherIcon = day;
+        } else if(!isDay){
+            weatherIcon = night;
+        }
+
+        if(temperature >= 90){
+            tempIcon = temp04;
+        } else if (temperature < 90 && temperature >= 70){
+            tempIcon = temp03;
+        } else if (temperature < 70 && temperature >= 40){
+            tempIcon = temp02;
+        } else if (temperature < 40){
+            tempIcon = temp01;
+        }
+
         return (
-            <div>
+            <div className="forecastDiv">
                 <br></br>
                 <h1 id="forecast">
-                    {forecast.properties.periods[id].name}:<br></br>
-                    {forecast.properties.periods[id].temperature} Degrees, {forecast.properties.periods[id].shortForecast}
+                    <img id="icon" src={calendar} alt="hang on..."></img>{name}<br></br>
+                    <img id="icon" src={tempIcon} alt="hang on..."></img><span id="temperatureText">{temperature}' Fahrenheit</span><br></br>
+                    <img id="icon" src={weatherIcon} alt="hang on..."></img>{shortForecast}
                 </h1>
             </div>
         )

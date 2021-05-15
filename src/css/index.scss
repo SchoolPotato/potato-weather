@@ -49,10 +49,10 @@ body {
 
   #headerLine {
     border: { 
-      color: $dark-blue;
+      color: $light-blue;
     }
     width: 0.1rem;
-    background-color: $dark-blue;
+    background-color: $light-blue;
   }
 
   #headerLogo {
@@ -78,3 +78,149 @@ body {
     font-family: LinkDX;
     font-weight: normal;
   }
+
+  #icon {
+    width: 2rem;
+    margin-right: 0.2rem;
+  }
+
+  #headerIcon {
+    width: 1.7rem;
+    margin-right: 0.2rem;
+  }
+
+  #temperatureText {
+    padding: {
+      top: auto;
+      bottom: auto;
+    }
+  }
+
+  .forecastDiv {
+    margin: {
+      right: auto;
+      left: auto;
+    }
+    padding: {
+      bottom: 1rem;
+    }
+    max-width: 30rem;
+  }
+
+.currentDay {
+  background-image: url(../images/background.png), url(../images/backgroundblank.png), url(../images/backgroundblank.png);
+  background-repeat: no-repeat repeat;
+  background-position: right, center, left;
+  background-size: 40rem;
+  font-size: 130%;
+  max-width: 100%;
+  max-height: 9rem;
+  height: 11rem;
+  padding: {
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+  margin: {
+    right: auto;
+    left: auto;
+    bottom: -1rem;
+  }
+  border-bottom: 0rem $dark-blue;
+}
+
+.brightLine {
+  background-color: #303d664b;
+}
+
+#navLogo {
+  border-bottom: none;
+}
+
+#Footer {
+  background-color: $dark-blue;
+  border-top: 0.1rem solid $light-blue;
+  nav{
+    border: 0rem;
+    margin: {
+      top: 0.5rem;
+      left: auto;
+      right: auto;
+    }
+    padding: {
+      top: 1rem;
+      bottom: 1rem;
+    }
+    a {
+      box-shadow: none;
+      background-color: $dark-blue;
+    }
+    * {
+      justify-content: space-evenly;
+      margin: auto;
+      color: $lightest-blue;
+      font-family: LinkDX;
+      font-size: 2.5rem;
+      text-decoration-line: none;
+      padding: 0.5rem;
+    }
+    div {
+      ul {
+        p{
+          a{
+            font-size: 1.2rem;
+          }
+          font-size: 1.2rem;
+        }
+        h3{
+          font-size: 1.5rem;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  max-width: 4rem;
+}
+
+#footerLine {
+  background-color: $light-blue;
+  border-color: $light-blue;
+}
+
+#copyright {
+  color: $lightest-blue;
+  font-family: LinkDX;
+  font-weight: normal;
+  padding: 0.3rem;
+  text-align: center;
+  a {
+    color: $light-blue;
+  }
+}
+
+
+@media (max-width: 932px){
+  div.navDiv {
+    nav {
+      a {
+        box-shadow: none;
+        font-size: 160%;
+        max-width: 7rem;
+        padding: {
+          left: 1rem;
+          right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 940px){
+  .currentDay{
+    background-image: url(../images/backgroundblank.png), url(../images/backgroundblank.png), url(../images/backgroundblank.png);
+    background-repeat: no-repeat repeat;
+  }
+}

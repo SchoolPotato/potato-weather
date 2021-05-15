@@ -1,7 +1,7 @@
 div.navDiv nav {
   /*             bottom-right-radius: 1rem;
             bottom-left-radius: 1rem; */
-  border-bottom: 0.2rem solid #303d66;
+  border-bottom: 0.2rem solid #6d8abf;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,9 +20,8 @@ div.navDiv nav a {
   font-size: 2.5rem;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
-  background-color: #6d8abf;
-  padding: 0.3rem;
-  border-radius: 0.2rem;
+  background-color: #303d66;
+  padding: 0.5rem;
   -webkit-box-shadow: 0.2rem 0.2rem 1rem 0.2rem black;
           box-shadow: 0.2rem 0.2rem 1rem 0.2rem black;
 }
@@ -69,9 +68,9 @@ code {
 }
 
 #headerLine {
-  border-color: #303d66;
+  border-color: #6d8abf;
   width: 0.1rem;
-  background-color: #303d66;
+  background-color: #6d8abf;
 }
 
 #headerLogo {
@@ -91,5 +90,138 @@ code {
   color: #d0daf5;
   font-family: LinkDX;
   font-weight: normal;
+}
+
+#icon {
+  width: 2rem;
+  margin-right: 0.2rem;
+}
+
+#headerIcon {
+  width: 1.7rem;
+  margin-right: 0.2rem;
+}
+
+#temperatureText {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.forecastDiv {
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 1rem;
+  max-width: 30rem;
+}
+
+.currentDay {
+  background-image: url(../images/background.png), url(../images/backgroundblank.png), url(../images/backgroundblank.png);
+  background-repeat: no-repeat repeat;
+  background-position: right, center, left;
+  background-size: 40rem;
+  font-size: 130%;
+  max-width: 100%;
+  max-height: 9rem;
+  height: 11rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -1rem;
+  border-bottom: 0rem #303d66;
+}
+
+.brightLine {
+  background-color: #303d664b;
+}
+
+#navLogo {
+  border-bottom: none;
+}
+
+#Footer {
+  background-color: #303d66;
+  border-top: 0.1rem solid #6d8abf;
+}
+
+#Footer nav {
+  border: 0rem;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#Footer nav a {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #303d66;
+}
+
+#Footer nav * {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+  color: #d0daf5;
+  font-family: LinkDX;
+  font-size: 2.5rem;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  padding: 0.5rem;
+}
+
+#Footer nav div ul p {
+  font-size: 1.2rem;
+}
+
+#Footer nav div ul p a {
+  font-size: 1.2rem;
+}
+
+#Footer nav div ul h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.social {
+  max-width: 4rem;
+}
+
+#footerLine {
+  background-color: #6d8abf;
+  border-color: #6d8abf;
+}
+
+#copyright {
+  color: #d0daf5;
+  font-family: LinkDX;
+  font-weight: normal;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+#copyright a {
+  color: #6d8abf;
+}
+
+@media (max-width: 932px) {
+  div.navDiv nav a {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-size: 160%;
+    max-width: 7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .currentDay {
+    background-image: url(../images/backgroundblank.png), url(../images/backgroundblank.png), url(../images/backgroundblank.png);
+    background-repeat: no-repeat repeat;
+  }
 }
 /*# sourceMappingURL=index.css.map */
