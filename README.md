@@ -1,5 +1,5 @@
 # Potato Weather
 
-my silly little react webapp that tells you what the weather was like weeks ago
+my silly little react webapp that tells you what the weather is like in arizona
 
-spoilers: it was warm
+spoilers: it's pretty warm
