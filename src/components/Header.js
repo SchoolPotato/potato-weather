@@ -1,9 +1,13 @@
 import logo from '../images/favicon.png';
 import sun from '../images/shortDesc01.png';
 import calendar from '../images/calendar.png';
+import Main from './Main'
+import About from './About';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 const Header = () => {
     return (
+        <Router>
         <div className="navDiv">
             <nav>
                 <div className="navDiv" id="headerDiv">
@@ -13,10 +17,19 @@ const Header = () => {
                     </nav>
                 </div>
                 <hr id="headerLine"></hr>
-                <a href="/"><img id="headerIcon" src={sun} alt="..."></img>Weather</a>
-                <a href="/"><img id="headerIcon" src={calendar} alt="..."></img>About</a>
+                <Link to="/"><img id="headerIcon" src={sun} alt="..."></img>Weather</Link>
+                <Link to="/about"><img id="headerIcon" src={calendar} alt="..."></img>About</Link>
             </nav>
         </div>
+            <Switch>
+            <Route exact path="/">
+                <Main />
+            </Route>
+            <Route path="/about">
+                <About />
+            </Route>
+            </Switch>
+        </Router>
     )
 }
 

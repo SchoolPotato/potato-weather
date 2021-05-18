@@ -6,9 +6,9 @@ const Footer = () => {
     return (
         <div className="navDiv" id="Footer">
             <nav>
-                <a href="twitter.com"><img id="twitter" className="social" src={twitter} alt="Gimme a sec..."></img></a>
-                <a href="facebook.com"><img id="facebook" className="social" src={facebook} alt="Hold onnnn..."></img></a>
-                <a href="youtube.com"><img id="youtube" className="social" src={youtube} alt="Just a minute..."></img></a>
+                <a rel="noreferrer" target="_blank" href="twitter.com"><img id="twitter" className="social" src={twitter} alt="Gimme a sec..."></img></a>
+                <a rel="noreferrer" target="_blank" href="facebook.com"><img id="facebook" className="social" src={facebook} alt="Hold onnnn..."></img></a>
+                <a rel="noreferrer" target="_blank" href="youtube.com"><img id="youtube" className="social" src={youtube} alt="Just a minute..."></img></a>
                 <div>
                     <ul>
                         <h3>Contact:</h3>
@@ -19,9 +19,18 @@ const Footer = () => {
                 </div>
                 <div>
                     <ul>
-                        <h3>Other Pages:</h3>
+                        <h3>My Stuff:</h3>
                         <p><a rel="noreferrer" target="_blank" href="https://schoolpotato.github.io/Pokedex/">Pokedex</a></p>
                         <p><a rel="noreferrer" target="_blank" href="https://schoolpotato.github.io/TicTacToe">Tic Tac Toe</a></p>
+                        <p><a rel="noreferrer" target="_blank" href="https://schoolpotato.github.io/CommissionsSheet/">Commissions</a></p>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h3>Other:</h3>
+                        <p><a rel="noreferrer" target="_blank" href="https://www.weather.gov/documentation/services-web-api">Weather API</a></p>
+                        <p><a rel="noreferrer" target="_blank" href="https://www.alyonascooking.com/molochne-european-semi-sweet-milk-soup-%D0%BC%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B9/">Milk Soup</a></p>
+                        <p><a rel="noreferrer" target="_blank" href="https://www.howmanypeopleareinspacerightnow.com/">People in Space</a></p>
                     </ul>
                 </div>
             </nav>

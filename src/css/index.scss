@@ -73,10 +73,33 @@ body {
     padding-right: 0.5rem;
   }
 
-  #forecast {
+  #forecast, #aboutHeader, h3 {
     color: $lightest-blue;
     font-family: LinkDX;
     font-weight: normal;
+  }
+
+  #aboutPara {
+    text-align: center;
+    font-size: 150%;
+  }
+
+  h3 {
+    a {
+      color: $light-blue;
+    }
+    max-width: 90%;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+
+  #aboutHeader {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: $dark-blue;
   }
 
   #icon {
@@ -132,6 +155,18 @@ body {
 .brightLine {
   background-color: #303d664b;
 }
+.clouds {
+  background-image: url(../images/cloudsl.png), url(../images/clouds.png);
+  background-position: left, right;
+  background-size: contain;
+  background-repeat: no-repeat, no-repeat;
+}
+.birds {
+  background-image: url(../images/birds.png), url(../images/birdsr.png);
+  background-position: left, right;
+  background-size: contain;
+  background-repeat: no-repeat, no-repeat;
+}
 
 #navLogo {
   border-bottom: none;
@@ -143,14 +178,15 @@ body {
   nav{
     border: 0rem;
     margin: {
-      top: 0.5rem;
+      top: 0rem;
       left: auto;
       right: auto;
     }
     padding: {
-      top: 1rem;
-      bottom: 1rem;
+      top: 0rem;
+      bottom: 0rem;
     }
+    max-width: 75%;
     a {
       box-shadow: none;
       background-color: $dark-blue;
@@ -183,6 +219,9 @@ body {
 
 .social {
   max-width: 4rem;
+}
+#youtube {
+  max-width: 5rem;
 }
 
 #footerLine {
@@ -222,5 +261,11 @@ body {
   .currentDay{
     background-image: url(../images/backgroundblank.png), url(../images/backgroundblank.png), url(../images/backgroundblank.png);
     background-repeat: no-repeat repeat;
+  }
+  .clouds {
+    background-image: none;
+  }
+  .birds {
+    background-image: none;
   }
 }
