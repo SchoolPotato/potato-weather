@@ -14,7 +14,7 @@ const Footer = () => {
                         <h3>Contact:</h3>
                         <p>1+ (623) 262-3300</p>
                         <p>3139 W Cavedale Drive</p>
-                        <p>TruPotatoes@outlook.com</p>
+                        <p><a href="mailto:trupotatoes@outlook.com">TruPotatoes@outlook.com</a></p>
                     </ul>
                 </div>
                 <div>
