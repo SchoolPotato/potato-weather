@@ -1,22 +1,27 @@
 import Forecast from "./Forecast";
 
 const Main = () => {
+    let addNum = 0;
+    let days = [0];
+    days[0]+=addNum
+    days = [days[0], days[0] + 2, days[0] + 4, days[0] + 6, days[0] + 8]
+
     return (
         <div>
         <div className="currentDay">
-            <Forecast id={0} />
+            <Forecast id={days[0]} />
         </div>
         <br></br>
-        <Forecast id={2} />
+        <Forecast id={days[1]} />
         <br></br>
         <div className="brightLine birds">
-            <Forecast id={4} />
+            <Forecast id={days[2]} />
         </div>
         <br></br>
-        <Forecast id={6} />
+        <Forecast id={days[3]} />
         <br></br>
         <div className="brightLine clouds">
-            <Forecast id={8} />
+            <Forecast id={days[4]} />
         </div>
         </div>
     )
