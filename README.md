@@ -1,5 +1,7 @@
-# Potato Weather
+# Weather Potato
 
-my silly little react webapp that tells you what the weather is like in arizona
+My first full react app, Weather Potato.
+It uses the National Weather Service API to tell you what the weather is like in Arizona.
 
-spoilers: it's pretty warm
+![shortDesc03](https://user-images.githubusercontent.com/71471789/118741086-4ad74780-b802-11eb-9a04-9cd639dfab76.png)
+
