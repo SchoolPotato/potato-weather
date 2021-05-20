@@ -30,7 +30,7 @@ const Forecast = ({ id }) => {
 
     if(!isLoaded){
         return(
-            <div className="forecastDiv">Loading...</div>
+            <div className="forecastDiv" id="forecast">Loading...</div>
         )
     } else if(error){
         return <div className="forecastDiv" id="forecast">Error: {error.message}</div>
