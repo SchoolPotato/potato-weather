@@ -3,7 +3,7 @@ const About = () => {
         <div className="aboutDiv">
             <h1 id="aboutHeader">About</h1>
             <br></br>
-            <h3 id="aboutPara">I am a rectangular man who makes pixels and has potato in his name</h3>
+            <h3 id="aboutPara">I am a rectangular man who makes pixels</h3>
             <h3 id="aboutPara">I have been making pixel art for about 9 years as of 2021 and I am very tired but I really like squares so it's ok</h3>
             <br></br><br></br>
             <h3 id="aboutPara">Fun Fact: Canada is actually just a small island in the Great Lakes; It only appears so big because of the mercator projection</h3>
